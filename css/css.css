@@ -1,0 +1,94 @@
+.bottombar {
+	top:auto;
+	bottom:0;
+}
+
+body {
+	font-family: monospace;
+	background-color: #000;
+	color: #999;
+}
+
+#directory{
+	height:100%; width:400px; float:left; overflow-y:hidden; overflow-x:hidden; background:#000;
+	border-right: 1px solid #333;
+}
+
+#notepad{
+	min-height:100%;  text-indent:2px; overflow-y:scroll; font-size: 12px; 
+}
+
+div#noteTree{
+	margin: 10px;
+	margin-left:-13px;
+	font-size: 15px; 
+}
+div.folder-content{
+	margin-left: 14px;
+	padding-left:  10px;
+	border-left: 1px solid #000;
+}
+div.note{
+}
+
+div.folder, div.note{
+	margin: 3px 0;
+}
+
+div.folder > span, div.note > span{
+	margin-right: 5px
+}
+
+div.note > span{
+	color: lime;
+}
+
+div.folder > span{
+	color:#D7CD66;
+}
+
+
+
+
+div.note > span.name{
+	width: 215px;
+	display: inline-block;
+	vertical-align: top;
+	color:#999;
+}
+div.folder > span.name{
+	color:#999;
+}
+
+div.focus > span.name{
+	background-color: #ccc;
+	color:#000;
+}
+
+div#context-menu{
+ border: 1px solid #666;
+ display: inline-block;
+ position: absolute;
+ background-color: #000;
+}
+
+div#context-menu > ul{
+	list-style: none;
+	padding: 5px;
+	margin: 5px;
+}
+
+
+li.cfocus{
+	background-color: #666;
+
+}
+
+div#noteTree, div#context-menu{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;	
+}
